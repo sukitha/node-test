@@ -9,6 +9,10 @@ app.post("/echo", (req, res) => {
   res.send(request_body);
 });
 
+app.post("/", (req, res) => {
+  res.send("Hello World !!");
+});
+
 let server = http.createServer(app);
 
 let port = process.env.PORT || 8888;
